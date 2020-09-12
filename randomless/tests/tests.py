@@ -4,14 +4,11 @@
 # FB - 201012046
 # Compares output distribution of any given PRNG
 # w/ an hypothetical True-Random Number Generator (TRNG)
-import math
 import time
-from main import CameraRandom
-global x
-x = time.clock() # seed for the PRNG
+from randomless import Random
 
-cr = CameraRandom()
-prng = cr.random
+
+prng = Random().random
 # PRNG to test
 #def prng():
     #global x
