@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="randomless",
-    version="0.1.2",
+    version="0.1.3",
     author="Artem Pavlov",
     description="A True Random Number Generator for python.",
     long_description=long_description,

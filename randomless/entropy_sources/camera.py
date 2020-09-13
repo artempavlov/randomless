@@ -10,7 +10,7 @@ class CameraEntropySource(BaseEntropySource):
 
     def start_collecting_entropy(self):
         bits_per_value = 8
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
         while self.is_running:
             ret, frame = self.cap.read()
             if ret:

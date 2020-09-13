@@ -1,4 +1,4 @@
-from ..randomless import Random
+from randomless import Random
 
 
 random = Random()
