@@ -5,11 +5,15 @@ class BaseEntropySource(object):
     def __init__(self, buffer):
         self.buffer = buffer
         self.is_running = True
-        self.thread = threading.Thread(target=self.collect_entropy)
+        self.thread = threading.Thread(target=self.start_collecting_entropy)
         self.thread.start()
 
-    def collect_entropy(self):
+    def start_collecting_entropy(self):
+        pass
+
+    def stop_collecting_entropy(self):
         pass
 
     def release(self):
         self.is_running = False
+        self.stop_collecting_entropy()

@@ -6,12 +6,13 @@ import numpy as np
 class CameraEntropySource(BaseEntropySource):
     def __init__(self, buffer):
         super().__init__(buffer)
+        self.cap = None
 
-    def collect_entropy(self):
+    def start_collecting_entropy(self):
         bits_per_value = 8
-        cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture(0)
         while self.is_running:
-            ret, frame = cap.read()
+            ret, frame = self.cap.read()
             if ret:
                 frame = frame.reshape(frame.shape[0]*frame.shape[1]*frame.shape[2])
                 frame = frame[0:frame.shape[0] - (frame.shape[0] % bits_per_value)]
@@ -23,4 +24,6 @@ class CameraEntropySource(BaseEntropySource):
                 frame = frame.tobytes()
                 frame = [frame[i:i + 1] for i in range(len(frame))]
                 self.buffer.enqueue(frame)
-        cap.release()
+
+    def stop_collecting_entropy(self):
+        self.cap.release()
