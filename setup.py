@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="randomless",
-    version="0.1.0",
+    version="0.1.1",
     author="Artem Pavlov",
     description="A True Random Number Generator for python.",
     long_description=long_description,
@@ -19,7 +19,7 @@ setuptools.setup(
     ],
     python_requires='>=3.4',
     install_requires=[
-        'opencv-python==4.4.0',
-        'numpy==1.19.1',
+        'opencv-python',
+        'numpy',
     ],
 )
