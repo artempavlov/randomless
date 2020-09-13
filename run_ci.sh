@@ -1,0 +1,1 @@
+sh ci/build.sh

@@ -1,4 +1,4 @@
-from .base_entropy_source import BaseEntropySource
+from randomless.entropy_sources.base_entropy_source import BaseEntropySource
 import cv2
 import numpy as np
 

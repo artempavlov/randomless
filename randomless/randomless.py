@@ -1,5 +1,5 @@
-from .base_random import BaseRandom
-from .entropy_sources.camera import CameraEntropySource
+from randomless.base_random import BaseRandom
+from randomless.entropy_sources.camera import CameraEntropySource
 
 
 class Random(BaseRandom):

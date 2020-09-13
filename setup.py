@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="randomless",
-    version="0.0.2",
+    version="0.0.3",
     author="Artem Pavlov",
     description="A True Random Number Generator for python.",
     long_description=long_description,
@@ -17,11 +17,12 @@ setuptools.setup(
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
     ],
-    py_modules=['randomless'],
+    #py_modules=['randomless'],
+    packages=setuptools.find_packages(),
     python_requires='>=3.4',
     install_requires=[
         'opencv-python==4.4.0',
         'numpy==1.19.1',
     ],
-    package_dir={'': 'randomless'},
+    #package_dir={'': 'randomless'},
 )
