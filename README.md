@@ -3,7 +3,8 @@ A python module which provides a True Random Number Generator (TRNG) based on th
 ## Requirements
 Python 3 \
 opencv-python==4.4.0 \
-numpy==1.19.1
+numpy==1.19.1 \
+A webcam with drivers installed.
 ## Installation
 Install requirements by executing the following command.
 ```sh
