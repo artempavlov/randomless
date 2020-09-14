@@ -18,7 +18,7 @@ from randomless import Random
 Create a Random class instance.
 ```python
 random = Random()
-````
+```
 Generate a random number just like you would with Python's default random module.
 ```python
 random.random()
@@ -64,4 +64,4 @@ print('weibullvariate:', random.weibullvariate(1, 1))
 Stop the process of collecting noise from your webcam.
 ```python
 random.release()
-````
+```
