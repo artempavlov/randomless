@@ -7,11 +7,9 @@ opencv-python==4.4.0 \
 numpy==1.19.1 \
 A webcam with drivers installed.
 ## Installation
-Install requirements by executing the following command.
 ```sh
-pip install -r requirements.txt
+pip install randomless
 ```
-Place the folder containing file "\_\_init\_\_.py" into your project directory or into the default python module installation directory.
 ## Usage
 Import.
 ```python
