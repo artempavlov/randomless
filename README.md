@@ -3,8 +3,8 @@
 A python module which provides a True Random Number Generator (TRNG) based on the electronic noise captured by your webcam. The api is mostly compatible with Python's default random module.
 ## Requirements
 Python 3 \
-opencv-python==4.4.0 \
-numpy==1.19.1 \
+opencv-python \
+numpy \
 A webcam with drivers installed.
 ## Installation
 ```sh
